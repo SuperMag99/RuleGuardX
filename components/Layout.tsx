@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Shield, LayoutDashboard, FileWarning, Table, FileCode, Settings as SettingsIcon, Layers, BookOpen } from 'lucide-react';
+import { Shield, LayoutDashboard, FileWarning, Table, FileCode, Settings as SettingsIcon, Layers, BookOpen, Github, Linkedin } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -54,13 +55,35 @@ const Layout: React.FC<LayoutProps> = ({ children, activeTab, setActiveTab, isAn
       <main className="flex-1 max-w-[1600px] mx-auto w-full p-6">
         {children}
       </main>
-      <footer className="bg-slate-900 border-t border-slate-800 p-6 text-center space-y-2">
-         <p className="text-slate-500 text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2">
-           <Shield className="w-3 h-3" /> RuleGuardX - Firewall Rules Auditor v2.0.0
-         </p>
-         <p className="text-slate-600 text-[10px] uppercase tracking-tighter">
-           Copyright © 2025 RuleGuardX. Released under the MIT License.
-         </p>
+      <footer className="bg-slate-900 border-t border-slate-800 p-8 text-center space-y-4">
+         <div className="flex items-center justify-center gap-6 mb-2">
+           <a 
+             href="https://github.com/SuperMag99" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             className="text-slate-500 hover:text-white transition-colors flex items-center gap-2 text-sm font-medium"
+             title="Follow on GitHub"
+           >
+             <Github className="w-5 h-5" /> <span>SuperMag99</span>
+           </a>
+           <a 
+             href="https://www.linkedin.com/in/mag99/" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             className="text-slate-500 hover:text-indigo-400 transition-colors flex items-center gap-2 text-sm font-medium"
+             title="Connect on LinkedIn"
+           >
+             <Linkedin className="w-5 h-5" /> <span>mag99</span>
+           </a>
+         </div>
+         <div className="space-y-1">
+           <p className="text-slate-500 text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2">
+             <Shield className="w-3 h-3" /> RuleGuardX - Firewall Rules Auditor v2.0.0
+           </p>
+           <p className="text-slate-600 text-[10px] uppercase tracking-tighter">
+             Copyright © 2025 RuleGuardX. Released under the MIT License.
+           </p>
+         </div>
       </footer>
     </div>
   );
