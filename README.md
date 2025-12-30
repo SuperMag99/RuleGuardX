@@ -88,3 +88,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ---
 
 **Security & Ethics Notice:** This tool is intended for authorized security audits only. RuleGuardX performs offline analysis and does not interact with live network devices.
+
+---
+
+## 👤 Maintainer
+**SuperMag99**  
+🔗 GitHub: [SuperMag99](https://github.com/SuperMag99)  
+🔗 LinkedIn: [mag99](https://www.linkedin.com/in/mag99/)
